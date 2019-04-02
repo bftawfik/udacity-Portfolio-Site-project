@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, head, body {
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainHeader{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid #7d97ad;
+    text-align: center;
+}
+
+.mainHeader .logo img{
+    width: 70px;
+    padding-right: 20px;
+}
+
+.mainArticle .mainSection{
+    padding: 50px 0;
+    border-bottom: 5px solid #7d97ad;
+}
+
+.mainArticle .featuredWork .sectionTitle{
+    padding: 30px 0;
+}
+
+.mainArticle .featuredWork .featuredProjects .featuredProject {
+    background-color: #e5eaee;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid #7d97ad;
+}
+
+.featuredProject img{
+    order: 2;
+}
+
+.featuredProject h2{
+    order: 1;
+    padding: 30px 0 10px 0;
+}
+
+.featuredProject p{
+    order:3;
+    padding: 10px 0 30px 0;
+}
+
+.mainFooter{
+    padding: 20px 0 20px 0;
+}
+
+@media screen and (min-width: 600px){
+    body{
+        text-align: left;
+    }
+
+    .mainArticle .mainSection{
+        padding: 20px 0;
+        border: 0;
+    }
+
+    .mainArticle .featuredWork .sectionTitle{
+        padding-left: 30px;
+    }
+
+    .mainHeader{
+        padding: 50px 20px 20px 20px;
+        flex-direction: row;
+    }
+
+    .mainHeader .logo img{
+        width: 70px;
+        padding-right: 20px;
+    }
+
+    .mainHeader .title {
+        text-align: right;
+        flex-grow: 1;
+    }
+
+    .mainArticle .featuredWork .featuredProjects{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .mainArticle .featuredWork .featuredProjects .featuredProject{
+        background-color: transparent;
+        flex: 1;
+        min-width: 270px;
+        border: 0;
+        margin-bottom: 50px;
+    }
+
+    .mainArticle .featuredWork .featuredProjects .featuredProject:nth-child(odd){
+        margin-right: 20px;
+    }
+
+    .mainArticle .featuredWork .featuredProjects .featuredProject:last-child{
+        margin-right: 0;
+    }
+
+    .featuredProject img{
+        order: 1;
+    }
+    
+    .featuredProject h2{
+        order: 2;
+        padding: 0 20px;
+    }
+
+    .featuredProject p{
+        padding: 0 20px;
+    }
+
+    .mainFooter{
+        border-top: 5px solid #7d97ad;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 800px){
+
+    .mainArticle .featuredWork .featuredProjects .featuredProject{
+        min-width: 0;
+        margin-right: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 1020px){
+
+    .mainHeader{
+        padding: 50px 0 20px 0;
+    }
+    .mainArticle .featuredWork .sectionTitle{
+        padding-left: 0;
+    }
+
+    .featuredProject h2, .featuredProject p{
+        padding: 0 ;
+    }
+    
+}
